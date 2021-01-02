@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Schedule_Add">zz
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/app"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/ln"
+        >
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_add_a_photo_black_24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageID"
+
+ />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="20dp"
+        android:id="@+id/titleID"
+        android:padding="6dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_edittext"
+
+        />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:minHeight="75dp"
+        android:gravity="top"
+        android:padding="6dp"
+        android:inputType="textMultiLine"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/desID"
+        android:background="@drawable/background_edittext"
+        />
+
+<TextView
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Select Date and Time"
+    android:id="@+id/textID"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    android:layout_marginTop="8dp"
+
+    />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Send Notification"
+
+        />
+
+
+
+<Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinnerID"
+    android:layout_marginTop="5dp"
+    android:visibility="gone"
+    android:entries="@array/count5"
+
+    />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:text="Ring Alerm at Schedule Time"
+            android:visibility="gone"
+
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="SAVE"
+        android:textSize="20dp"
+        android:id="@+id/btnID"
+        android:layout_marginTop="16dp"
+
+        />
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "54875352771",
+    "project_id": "my-cgpa-pro",
+    "storage_bucket": "my-cgpa-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54875352771:android:13c83d973a749a91c53c76",
+        "android_client_info": {
+          "package_name": "com.sh.mycgpapro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54875352771-6kb90iulo7i71bnnddh2gv7524if1ffn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuiIa82tHK44MVJ_uz13VU59gWD27mlHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54875352771-6kb90iulo7i71bnnddh2gv7524if1ffn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
